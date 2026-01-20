@@ -3,11 +3,7 @@ on:
   schedule:
     - cron: '39 21 */7 * *'
   push:
-    branches: [ "main" ]
-    # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "dotnet-10" ]
   workflow_dispatch:
 
 env:
