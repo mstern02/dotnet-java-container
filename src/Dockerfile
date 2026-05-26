@@ -1,7 +1,7 @@
 ARG DOTNET_VERSION="10.0"
 
 FROM mcr.microsoft.com/dotnet/sdk:$DOTNET_VERSION
-ARG NODE_VERSION="v24.13.0"
+ARG NODE_VERSION="v24.16.0"
 
 RUN apt-get update && apt-get install -y openjdk-17-jdk curl xz-utils rsync podman
 RUN ln -s $(which podman) /usr/bin/docker
